@@ -1,0 +1,11 @@
+Which Museum are you?,American Museum of Natural History,"Cooper Hewitt, Smithsonian Design Museum",The Frick Collection,"Intrepid Sea, Air & Space Museum",Liberty Science Center,The Museum of Arts and Design,Museum of Modern Art,Museum of the City of New York,The New Museum,New-York Historical Society,The Whitney Museum of American Art
+New-York Historical Society,5,7,4,9,10,6,1,8,3,N/A,2
+The Whitney Museum of American Art,2,1,5,9,10,4,7,3,8,6,N/A
+The New Museum,3,4,5,10,9,6,2,7,N/A,8,1
+Liberty Science Center,5,3,10,7,N/A,9,2,6,4,8,1
+The Museum of Arts and Design,2,6,10,9,7,N/A,4,1,8,5,3
+The Frick Collection,1,5,N/A,10,9,7,3,8,6,4,2
+Museum of the City of New York,5,7,4,8,9,6,2,N/A,1,10,3
+American Museum of Natural History,N/A,2,5,7,10,4,1,8,6,9,3
+"Cooper Hewitt, Smithsonian Design Museum",2,N/A,4,3,10,7,1,5,9,6,8
+"Intrepid Sea, Air & Space Museum",4,2,7,N/A,10,3,1,8,6,9,5

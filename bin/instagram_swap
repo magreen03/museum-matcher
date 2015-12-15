@@ -1,0 +1,30 @@
+#!/usr/bin/env ruby
+
+require 'csv'
+require_relative '../lib/museum'
+require_relative '../lib/extract_transform_data'
+require_relative '../lib/museum_match'
+
+$debug = false
+
+data = ExtractTransformData.new(CSV.read("./data/instagram_ranking_data.csv"), 12)
+museums = data.get_museums
+
+# Remove Liberty Science Center
+museums.select! { |m| m.name != "Liberty Science Center"}
+
+matcher = MuseumMatch.new(museums)
+matcher.print_order
+
+# Initial Macthing
+matcher.quick_match
+
+# Matcher for
+counter = 0
+while matcher.unhappy? > 0 && counter < 100
+  matcher.find_better_matches
+  matcher.quick_match
+  counter += 1
+end
+
+matcher.print_matches
